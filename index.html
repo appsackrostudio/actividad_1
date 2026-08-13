@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio personal</title>
   <link rel="stylesheet" href="css/styles.css">
+  
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style> html { scroll-behavior: smooth; } </style>
+
 </head>
 
 <body>
-  <header class="site-header">
-    <h1>Juan Crsitóbal Mera Vásquez</h1>
-    <p>Analísta de TI - Desarrollo web</p>
-
+  <header class="section bg-primary">
     <nav>
       <ul>
         <li> <a href="#sobre-mi">Sobre mí</a> </li>
@@ -24,46 +28,80 @@
   </header>
 
   <main>
-    <section id="sobre-mi">
-      <h2>Quien soy</h2>
-      <p>Soy Analista de tecnologías en una prestigiosa universidad del país, cuento con experiencia administrando plataformas institucionales. Actualmente curso la carrera de Ingeniería en Sistemas inteligentes, aplicando lo aprendido en proyectos reales de desarrollo web</p>
-    </section>
-
-    <section id="Habilidades">
-      <h2>habilidades</h2>
-      <div>
-        <article class="cards">
-          <h3>Diseño web</h3>
-          <p>Interfaces modernas y responsivas con HTML5 semántico, CSS y JAVASCRIPT</p>
-        </article>
-        <article class="cards">
-          <h3>Posicionamiento web (SEO)</h3>
-          <p>Optimización de sitios para motores de búsqueda y accesibilidad.</p>
-        </article>
-        <article class="cards">
-          <h3>Desarrollo backend</h3>
-          <p>APIs y servicios con Node.js, Express y bases de datos MySQL.</p>
-        </article>
+    <section id="inicio" class="section bg-primary">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h1 class="text-12 text-12  text-center">Hola, soy Analísta de TI y Desarrollo web</h1>
+            <h2 class="title text-center">Juan Cristóbal Mera Vásquez</h2>
+            <a href="#proyectos" class="btn btn-dark rounded-0 smooth-scroll mt-3">Mira mi portafolio</a>
+            <a href="#contactos">Contáctame</a>
+          </div>
+          <div>
+            image
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-
-      <article class="cards">
-        <h2>RAD</h2>
-        <p>Sistema web de registro de actividades docentes.
-          Reemplaza un proceso basado en Excel con una aplicación
-          React + Node.js + MySQL con acceso por roles.</p>
-      </article>
-      <article class="card">
-        <h3>Portal web institucional</h3>
-        <p>Auditoría y rediseño de secciones de contenido del portal de la Carrera universitaria.</p>
-      </article>
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">Quien soy</h2>
+        <p class="text-center mb-2 wow fadeInUp">Soy Analista de tecnologías en una prestigiosa universidad del país, cuento con experiencia administrando plataformas institucionales. Actualmente curso la carrera de Ingeniería en Sistemas inteligentes, aplicando lo aprendido en proyectos reales de desarrollo web</p>
+      </div>
     </section>
+
+    <section id="habilidades" class="section bg-light">
+      <div class="container">
+        <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">Habilidades</h2>
+        <div class="cards text-center">
+          <article class="card">
+            <i class="fas fa-desktop"></i>
+            <h3 class="text-6">Diseño web</h3>
+            <p class="text-muted">Interfaces modernas y responsivas con HTML5 semántico, CSS y JAVASCRIPT</p>
+          </article>
+
+          <article class="card">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3 class="text-6">UI/UX Design</h3>
+            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text..</p>
+          </article>
+
+          <article class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3 class="text-6">Posicionamiento web (SEO)</h3>
+            <p class="text-muted">Optimización de sitios para motores de búsqueda y accesibilidad.</p>
+          </article>
+
+          <article class="card">
+            <i class="fas fa-cogs"></i>
+            <h3 class="text-6">Desarrollo backend</h3>
+            <p class="text-muted">APIs y servicios con Node.js, Express y bases de datos MySQL.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2>Proyectos</h2>
+
+        <article class="cards">
+          <h2>RAD</h2>
+          <p>Sistema web de registro de actividades docentes.
+            Reemplaza un proceso basado en Excel con una aplicación
+            React + Node.js + MySQL con acceso por roles.</p>
+        </article>
+        <article class="card">
+          <h3>Portal web institucional</h3>
+          <p>Auditoría y rediseño de secciones de contenido del portal de la Carrera universitaria.</p>
+        </article>
+    </section>
+    </div>
   </main>
 
-  <footer id="contactos" class="footer">
+  <footer id="contactos" class="bg-primary">
     <h2>Contactos</h2>
     <address>
       Correo: <a href="mailto:jcmera@ecotec.edu.ec">jcmera@ecotec.edu.ec</a><br>
